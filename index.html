@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>视频播放器</title>
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+<figure>
+    <figcaption>视频播放器</figcaption>
+    <div class="player">
+        <video src="video/fun.mp4">
+            您的浏览器需要升级，暂不支持播放视频。（拒绝IE！！）
+        </video>
+        <div class="controls">
+            <!--播放暂停-->
+            <a href="javascript:;" class="switch icon-play"></a>
+            <!--播放进度-->
+            <div class="progress">
+                <div class="line"></div>
+                <div class="bar"></div>
+            </div>
+            <!--播放时间总长-->
+            <div class="timer">
+                <span class="current">00:00:00</span> / <span class="total">00:00:00</span>
+            </div>
+            <!--全屏取消全屏-->
+            <a href="javascript:;" class="expand icon-resize-full"></a>
+        </div>
+    </div>
+</figure>
+<script src="js/index.js"></script>
+</body>
+</html>
